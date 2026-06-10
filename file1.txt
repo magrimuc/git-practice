@@ -19,3 +19,4 @@ next. pull request workflow folgen (war hier was mit silent? egal)
 arbeiten (Deteien verändern, committen)
 "git checkout main" - wechsel zu main
 "git merge feature" - merge feature (i.e. commit der changes aus branch)
+###  nicht enthalten: den feature branch auch in github anlegen / verwalten
