@@ -10,4 +10,5 @@ git commit .gitignore -m "das geht niemanden was an"
 in github fork (button suchen) -> Kopie des Repos liegt bei Dir
 next. clone Deine Kopie
 next. ändere und committe lokal. push remote
-next. suche auf github.com den Button zu pull request
+next. suche auf github.com den Button zu pull request (oben links, der 6. Knopf: Hamburger, Katze, magrimuc, repo, <>Code, (Issues,) Pull Request: THERE you go - respektive https://github.com/magrimuc/lab-git-practice-data-ai/pulls)
+next. pull request workflow folgen (war hier was mit silent? egal)
