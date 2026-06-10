@@ -1,2 +1,2 @@
 mich gab es erst nur im feature branch
-un djetzt im main
+und jetzt im main
