@@ -16,7 +16,7 @@ next. pull request workflow folgen (war hier was mit silent? egal)
 3) feature branch
 "git branch feature" - legt branch feature  (ohne "feature": zeigt branches an)
 "git checkout feaure" - wechselt zum branch
-arbeiten (Deteien verändern, committen)
+arbeiten (Dateien verändern, committen)
 "git checkout main" - wechsel zu main
 "git merge feature" - merge feature (i.e. commit der changes aus branch)
 ###  nicht enthalten: den feature branch auch in github anlegen / verwalten
