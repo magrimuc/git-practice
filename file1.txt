@@ -12,3 +12,10 @@ next. clone Deine Kopie
 next. ändere und committe lokal. push remote
 next. suche auf github.com den Button zu pull request (oben links, der 6. Knopf: Hamburger, Katze, magrimuc, repo, <>Code, (Issues,) Pull Request: THERE you go - respektive https://github.com/magrimuc/lab-git-practice-data-ai/pulls)
 next. pull request workflow folgen (war hier was mit silent? egal)
+
+3) feature branch
+"git branch feature" - legt branch feature  (ohne "feature": zeigt branches an)
+"git checkout feaure" - wechselt zum branch
+arbeiten (Deteien verändern, committen)
+"git checkout main" - wechsel zu main
+"git merge feature" - merge feature (i.e. commit der changes aus branch)
