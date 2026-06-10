@@ -1,0 +1,14 @@
+git tricks
+
+1) .gitignore Datei anlegen (reinschreiben: welche Dateien sollen nicht in repo)
+git add .gitignore
+git commit .gitignore -m "das geht niemanden was an"
+
+--- so ist im Repo: diese Dateien kommen nicht rein; Der Inhalt der Dateien (alles außer Name) bleibt draußen und stört auch nicht 
+
+2) workflow fork & pul req
+in github fork (button suchen) -> Kopie des Repos liegt bei Dir
+next. clone Deine Kopie
+next. ändere und committe lokal. push remote
+next. suche auf github.com den Button zu pull request (oben links, der 6. Knopf: Hamburger, Katze, magrimuc, repo, <>Code, (Issues,) Pull Request: THERE you go - respektive https://github.com/magrimuc/lab-git-practice-data-ai/pulls)
+next. pull request workflow folgen (war hier was mit silent? egal)
