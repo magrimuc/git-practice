@@ -1,0 +1,8 @@
+git tricks
+
+1) .gitignore Datei anlegen (reinschreiben: welche Dateien sollen nicht in repo)
+git add .gitignore
+git commit .gitignore -m "das geht niemanden was an"
+
+--- so ist im Repo: diese Dateien kommen nicht rein; Der Inhalt der Dateien (alles außer Name) bleibt draußen und stört auch nicht 
+
