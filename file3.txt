@@ -1,0 +1,19 @@
+Descriptive Statistics
+import pandas as pd
+import seaborn as sns #histplots
+import matplotlib.pyplot as plt
+ 
+# Dataset source URL
+url = "https://raw.githubusercontent.com/data-bootcamp-v4/prework_data/main/students_performance.csv"
+# Load the Student Performance dataset / datafeet
+df = pd.read_csv(url)
+i = 0 # oder eins - rows und cols von df
+print(df.shape)
+df.nunique()
+sns.histplot(df)
+
+#wenn 2 plots:
+plt.show()
+# damit erreicht man: dass Plots nicht überschrieben werden, sondern gesondert nacheinander dargestellt werden.
+
+

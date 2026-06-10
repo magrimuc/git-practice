@@ -1,0 +1,12 @@
+#Hypothesis Testing
+# Step-by-Step Example Code:
+from scipy.stats import ttest_1samp
+import numpy as np
+
+t-tests prüfen Mittelwert
+p-values sind die W-keit, dass die Gegenthese zutrifft. 
+(reject 0 - hyp? 
+       wenn p-value kleiner Alpha; 
+       sonst: nicht genug Data für nicht Gültigkeit der Antithese)
+# We perform a one-sample t-test
+t_stat, p_value = ttest_1samp(increased_sleep_hours, claimed_mean_increase)
