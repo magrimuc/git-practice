@@ -20,3 +20,6 @@ arbeiten (Dateien verändern, committen)
 "git checkout main" - wechsel zu main
 "git merge feature" - merge feature (i.e. commit der changes aus branch)
 ###  nicht enthalten: den feature branch auch in github anlegen / verwalten
+
+4) https://download-directory.github.io/
+Wenn nur Teile (einzelne Dateien) eines Repositories herunterzuladen sind, kannst Du dieses WebService nutzen.
