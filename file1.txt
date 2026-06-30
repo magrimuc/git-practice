@@ -25,8 +25,8 @@ arbeiten (Dateien verändern, committen)
 Wenn nur Teile (einzelne Dateien) eines Repositories herunterzuladen sind, kannst Du dieses WebService nutzen.
 
 5) (versuche) eine einmal geaddedte Datei zu vergessen.
-Problem: git push läuft auf Fehler, weil DAtei zu groß (100 MB) f github.
-ABER lokales repo hat die große Datei drin...
+Problem: git push läuft auf Fehler, weil Datei zu groß (100 MB) f github.
+ABER lokales repo hat die große Datei drin (irgendwo hängend)...
 Bis das repo sie vergißt muss man:
 
 $ git reset HEAD dataset/*
