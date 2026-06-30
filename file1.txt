@@ -23,3 +23,18 @@ arbeiten (Dateien verändern, committen)
 
 4) https://download-directory.github.io/
 Wenn nur Teile (einzelne Dateien) eines Repositories herunterzuladen sind, kannst Du dieses WebService nutzen.
+
+5) (versuche) eine einmal geaddedte Datei zu vergessen.
+Problem: git push läuft auf Fehler, weil DAtei zu groß (100 MB) f github.
+ABER lokales repo hat die große Datei drin...
+Bis das repo sie vergißt muss man:
+
+$ git reset HEAD dataset/*
+$ git rm --cached dataset/ratings.csv
+$ git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch dataset/ratings.csv' HEAD~3..HEAD
+$ git rm --cached dataset/ratings.csv
+
+der nun folgende commit (.ignore also) ist duffizient, einen vernünftigen status herbeizuführen - ohne rm cached reichte es in ersten Erfahrungen nicht...
+
+
+
