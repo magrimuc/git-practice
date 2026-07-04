@@ -1,3 +1,5 @@
+df.select_dtypes(include=['number']) # get continous/cat columns use ex statt in, too
+
 #Hypothesis Testing
 # Step-by-Step Example Code:
 from scipy.stats import ttest_1samp
