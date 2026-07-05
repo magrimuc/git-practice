@@ -9,3 +9,7 @@ sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f', cmap='coolwarm', cent
 plt.title('Correlation Matrix of Key Football Metrics')
 plt.tight_layout()
 plt.show()
+
+# Spearman-Korrelation (robuster gegenüber Ausreißern)
+spearman_corr = df['home_score'].corr(df['home_xg'], method='spearman')
+print(f"Spearman-Korrelation: {spearman_corr:.3f}")
