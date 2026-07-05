@@ -1,2 +1,2 @@
-mich gab es erst nur im feature branch
-und jetzt im main
+sns.pairplot(df[['matrix_size', 'noise_level', 'mae', 'effective_bits', 'snr_db']], diag_kind='kde')
+
