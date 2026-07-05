@@ -1,2 +1,11 @@
-sns.pairplot(df[['matrix_size', 'noise_level', 'mae', 'effective_bits', 'snr_db']], diag_kind='kde')
-
+cols = ['matrix_size', 'noise_level', 'mae', 'effective_bits', 'snr_db']
+#costly pairwise scatterplot
+sns.pairplot(df[cols], diag_kind='kde')
+## corr matrix
+corr_matrix = df_clean[cols].corr()
+plt.figure(figsize=(14, 12))
+mask = np.triu(np.ones_like(corr_matrix, dtype=bool), k=1)
+sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f', cmap='coolwarm', center=0, vmin=-1, vmax=1, square=True, linewidths=0.5)
+plt.title('Correlation Matrix of Key Football Metrics')
+plt.tight_layout()
+plt.show()
