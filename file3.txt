@@ -18,9 +18,9 @@ plt.show()
 # damit erreicht man: dass Plots nicht überschrieben werden, sondern gesondert nacheinander dargestellt werden.
 
 Wölbung (Curtosis)
-leptokurtic - long tails, hoher peak
-platokurtic - platte Kurve, dicker Bauch, kein peak
-masokurtic - normal distr.
+leptokurtic - long tails, hoher peak: v=3
+platokurtic - platte Kurve, dicker Bauch, kein peak: v < 3
+masokurtic - normal distr.: v > 3
 
 
 
