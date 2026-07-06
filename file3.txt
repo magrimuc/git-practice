@@ -1,7 +1,8 @@
-Descriptive Statistics
-import pandas as pd
-import seaborn as sns #histplots
-import matplotlib.pyplot as plt
+Descriptive Statistics (?)
+
+# Spearman-Korrelation (robuster gegenüber Ausreißern)
+spearman_corr = df['home_score'].corr(df['home_xg'], method='spearman')
+print(f"Spearman-Korrelation: {spearman_corr:.3f}")
  
 # Dataset source URL
 url = "https://raw.githubusercontent.com/data-bootcamp-v4/prework_data/main/students_performance.csv"
