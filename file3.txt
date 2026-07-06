@@ -22,5 +22,7 @@ leptokurtic - long tails, hoher peak: v=3
 platokurtic - platte Kurve, dicker Bauch, kein peak: v < 3
 masokurtic - normal distr.: v > 3
 
-
-
+Skew:
++ : Mean > Median > Mode
+= : symmetrical : Mean = Median = Mode
+- : Mode > Median > Mean
