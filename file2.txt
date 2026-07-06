@@ -1,3 +1,25 @@
+df.select_dtypes(include=['number']) # get continous/cat columns use ex statt in, too (df inspec)
+
+### Plot Sammlung
+#cat colmns: 
+sns.countplot(x=df.catCol)
+sns.barplot(x=df.catCol, y="passengers", data=flights, ci=None)
+
+sns.lineplot(data=flights, x="year", y="passengers"); 
+plt.ylabel("Average", fontsize=15);
+plt.xlabel("The years", fontsize=15);
+plt.title("This is the average of passengers throughout the years", fontsize = 20);
+sns.kdeplot(x=titanic.age, hue=titanic.pclass);
+
+sns.scatterplot(x="body_mass_g", y="flipper_length_mm", hue="species", data=penguins, size='bill_length_mm',
+                sizes=(0, 300), style="island")
+
+sns.histplot(data=titanic, x="age", hue="survived", multiple="stack", bins=12, kde=True);
+
+sns.catplot(data=penguins, x="species", y="body_mass_g", hue="sex", jitter=True)
+sns.boxplot(x="age", data=titanic);
+sns.violinplot(x=titanic.age)
+
 cols = ['matrix_size', 'noise_level', 'mae', 'effective_bits', 'snr_db']
 #costly pairwise scatterplot
 sns.pairplot(df[cols], diag_kind='kde')
@@ -9,7 +31,7 @@ sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f', cmap='coolwarm', cent
 plt.title('Correlation Matrix of Key Football Metrics')
 plt.tight_layout()
 plt.show()
+sns.jointplot(data=penguins, x= "body_mass_g", y= "flipper_length_mm");
 
-# Spearman-Korrelation (robuster gegenüber Ausreißern)
-spearman_corr = df['home_score'].corr(df['home_xg'], method='spearman')
-print(f"Spearman-Korrelation: {spearman_corr:.3f}")
+fig, axs = plt.subplots(nrows=2, ncols=3, figsize=(20, 15));
+penguins.groupby(["species", "sex"])["sex"].count().unstack().plot(kind="barh", ax=axs[0, 0]);sns.violinplot(x=penguins.bill_length_mm, y=penguins.species, ax=axs[0, 1]);sns.histplot(data=penguins, x="flipper_length_mm", hue="species", multiple="stack", ax=axs[0, 2]);sns.swarmplot(data=penguins, x="body_mass_g", y="sex", hue="species", ax=axs[1, 0]);#penguins.plot.pie(autopct="%.1f%%", ax=axs[1, 1]);sns.countplot(x=penguins.sex, ax=axs[1, 2])
