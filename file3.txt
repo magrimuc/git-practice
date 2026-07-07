@@ -23,9 +23,9 @@ platokurtic - platte Kurve, dicker Bauch, kein peak: v < 3
 masokurtic - normal distr.: v > 3
 
 Skew:
-+ : Mean > Median > Mode (left skewed)
++ : Mean > Median > Mode (right skewed)
 = : symmetrical : Mean = Median = Mode
-- : Mode > Median > Mean (right skewed)
+- : Mode > Median > Mean (left skewed)
 
 Outlier formular:
 IQR = df.col.quantile(0.75) - df.col.quantile(0.25)
