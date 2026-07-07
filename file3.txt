@@ -17,10 +17,10 @@ sns.histplot(df)
 plt.show()
 # damit erreicht man: dass Plots nicht überschrieben werden, sondern gesondert nacheinander dargestellt werden.
 
-Wölbung (Curtosis)
+Wölbung (Curtosis, Exzess)
 leptokurtic - long tails, hoher peak: v > 3
-platokurtic - platte Kurve, dicker Bauch, kein peak: v < 3
-masokurtic - normal distr.: v = 3
+platykurtic - platte Kurve, dicker Bauch, kein peak: v < 3
+mesokurtic - normal distr.: v = 3
 
 Skew:
 + : Mean > Median > Mode (right skewed)
