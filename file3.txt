@@ -36,6 +36,12 @@ clean_df = df[(df.col >= lower_bound) & (df.col <= upper_bound)]
 #trimming <1% eher ok
 #discretization
 #capping: replace thresholds
+z_scores = stats.zscore(df[column])
+outliers = df[abs(z_scores) > three]
+#auch: logarithmieren (+ wurzel ziehen) sqrt
+np.log1p(df.col)
+# Create age bins
+df['age_group'] = pd.cut(df['age'], bins=[0, 12, ... 60, max(df['age'])], labels=['Child', 'Teen',..., 'Senior'])
 
 normal distr.:
 (empirical) 3 sigma rule: mean +-1 1sd contends 68% of data; +-2ds: 95%; +-3ds: 99.7%; #sd = standard deviation 
