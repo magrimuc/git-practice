@@ -16,4 +16,6 @@ continuierl.:
 norm.rvs(loc=mean, scale=std, size=count)
 df.col.skew() # --> Wölbung Exzess file4
 np.random.exponential(scale=mean, size=size) # exponentiell
+#amount of time one spends in a bank is exponentially distributed with mean as 10 minutes (i.e. λ = 1/10)
+p_less_then_15 = scipy.stats.expon.cdf(15, scale=10) # more = 1-less
 
