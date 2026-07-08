@@ -12,3 +12,8 @@ cdf = stats.binom.cdf(x, all, p)
 Poisson:
 prob = (math.exp(-2.3) * (2.3 ** 5)) / math.factorial(5) # prop of scoring 5 goals in a match if 2.3 is AVG
 
+continuierl.:
+norm.rvs(loc=mean, scale=std, size=count)
+df.col.skew() # --> Wölbung Exzess file4
+np.random.exponential(scale=mean, size=size) # exponentiell
+
