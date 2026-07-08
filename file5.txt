@@ -1,0 +1,14 @@
+Verteilungen:
+diskret: binomial & Poisson
+all = appls + orans
+tot = math.comb(all, 20) # all possible combinations
+fav = math.comb(appls, 5) * math.comb(orans, 15)
+prop = fav/tot
+cummulative dens funct.:
+p = 0.6
+x = np.arange(1, 5) # let there be 4 or less 0.6fruits in all; sum prop
+cdf = stats.binom.cdf(x, all, p)
+
+Poisson:
+prob = (math.exp(-2.3) * (2.3 ** 5)) / math.factorial(5) # prop of scoring 5 goals in a match if 2.3 is AVG
+
