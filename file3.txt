@@ -34,6 +34,8 @@ upper_bound = df.col.quantile(0.75) + 1.5 IQR
 outliers = df[(df.col < lower_bound) | (df.col > upper_bound)]
 clean_df = df[(df.col >= lower_bound) & (df.col <= upper_bound)]
 #trimming <1% eher ok
+#discretization
+#capping: replace thresholds
 
 normal distr.:
 (empirical) 3 sigma rule: mean +-1 1sd contends 68% of data; +-2ds: 95%; +-3ds: 99.7%; #sd = standard deviation 
