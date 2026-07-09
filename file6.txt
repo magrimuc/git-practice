@@ -1,0 +1,7 @@
+AI early usecase:
+Named Entity Recognition
+Speech 2 Text
+Sentiment Analysis (Client feedback)
+OCR
+descision: hard coded (limited: build a Spam Email Filter)
+ML: 2 kinds (un)supervised 
