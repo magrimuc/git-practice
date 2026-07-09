@@ -40,4 +40,9 @@ I) dependent samples -> use paired sample test
 ttest_rel(sample1, sample2, alternative = “two-sided”)
 Ia) st.ttest_ind(ab_test['a'], ab_test['b'], equal_var=False) # we don't assume equal variance, the test will be more robust
 II ) independent samples -> use f_oneway(s1, ...sn)
+Funktion	Anzahl der Mengen	Verhältnis der Mengen zueinander	Typischer Anwendungsfall
+ttest_1samp	1 Menge	Verglichen mit einem fixen Soll-Wert	Stichprobe vs. Herstellervorgabe / theoretischer Erwartungswert
+ttest_rel	2 Mengen	Abhängig (dieselben Objekte)	Vorher-Nachher-Messung (z.B. Optimierung, Medikation)
+ttest_ind	2 Mengen	Unabhängig (verschiedene Objekte)	A/B-Testing (z.B. System A vs. System B, Linux vs. Windows)
+f_oneway	>= 3 Mengen	Unabhängig (verschiedene Objekte)	Vergleich von mehreren Kategorien (z.B. Python vs. Java vs. C++)
 
