@@ -1,7 +1,8 @@
-Descriptive Statistics
-import pandas as pd
-import seaborn as sns #histplots
-import matplotlib.pyplot as plt
+Descriptive Statistics (?)
+
+# Spearman-Korrelation (robuster gegenüber Ausreißern)
+spearman_corr = df['home_score'].corr(df['home_xg'], method='spearman')
+print(f"Spearman-Korrelation: {spearman_corr:.3f}")
  
 # Dataset source URL
 url = "https://raw.githubusercontent.com/data-bootcamp-v4/prework_data/main/students_performance.csv"
@@ -16,4 +17,31 @@ sns.histplot(df)
 plt.show()
 # damit erreicht man: dass Plots nicht überschrieben werden, sondern gesondert nacheinander dargestellt werden.
 
+Wölbung (Curtosis, Exzess)
+leptokurtic - long tails, hoher peak: v > 3
+platykurtic - platte Kurve, dicker Bauch, kein peak: v < 3
+mesokurtic - normal distr.: v = 3
 
+Skew:
++ : Mean > Median > Mode (right skewed)
+= : symmetrical : Mean = Median = Mode
+- : Mode > Median > Mean (left skewed)
+
+Outlier formular:
+IQR = df.col.quantile(0.75) - df.col.quantile(0.25)
+lower_bound = df.col.quantile(0.25) - 1.5 IQR
+upper_bound = df.col.quantile(0.75) + 1.5 IQR
+outliers = df[(df.col < lower_bound) | (df.col > upper_bound)]
+clean_df = df[(df.col >= lower_bound) & (df.col <= upper_bound)]
+#trimming <1% eher ok
+#discretization
+#capping: replace thresholds
+z_scores = stats.zscore(df[column])
+outliers = df[abs(z_scores) > three]
+#auch: logarithmieren (+ wurzel ziehen) sqrt
+np.log1p(df.col)
+# Create age bins
+df['age_group'] = pd.cut(df['age'], bins=[0, 12, ... 60, max(df['age'])], labels=['Child', 'Teen',..., 'Senior'])
+
+normal distr.:
+(empirical) 3 sigma rule: mean +-1 1sd contends 68% of data; +-2ds: 95%; +-3ds: 99.7%; #sd = standard deviation 

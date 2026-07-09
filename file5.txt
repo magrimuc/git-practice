@@ -1,0 +1,22 @@
+Verteilungen:
+diskret: binomial & Poisson
+all = appls + orans
+tot = math.comb(all, 20) # all possible combinations
+fav = math.comb(appls, 5) * math.comb(orans, 15)
+prop = fav/tot
+cummulative dens funct.:
+p = 0.6
+x = np.arange(1, 5) # let there be 4 or less 0.6fruits in all; sum prop
+cdf = stats.binom.cdf(x, all, p)
+Bayes Theorem (cond.prop2marginal.prop): P(A|B) -is: P(A when B is given)- = P(A /cap B) / P(B) = (P(B|A)*P((A))/P(B) # P(B|A) wird ausgerechnet (neu angeschaut), dann Formel
+
+Poisson:
+prob = (math.exp(-2.3) * (2.3 ** 5)) / math.factorial(5) # prop of scoring 5 goals in a match if 2.3 is AVG
+
+continuierl.:
+norm.rvs(loc=mean, scale=std, size=count)
+df.col.skew() # --> Wölbung Exzess file4
+np.random.exponential(scale=mean, size=size) # exponentiell
+#amount of time one spends in a bank is exponentially distributed with mean as 10 minutes (i.e. λ = 1/10)
+p_less_then_15 = scipy.stats.expon.cdf(15, scale=10) # more = 1-less
+
