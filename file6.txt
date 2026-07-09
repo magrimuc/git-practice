@@ -21,7 +21,8 @@ sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ =
 
 statsmodels.formula.api as smf
 smf.ols("[one col ~ against some]", df).summary() # Regressionsmodel Ordinary Least Squares auch als Weighted oder Generalized LS verfügbar
-# summary() contains R**2 und coef/ std err zu some col
+# .summary() contains R**2 und coef/ std err zu some col
+# .fit() trains
 
 Classification
 
