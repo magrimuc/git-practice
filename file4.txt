@@ -14,8 +14,7 @@ t_stat, p_value = ttest_1samp(increased_sleep_hours, claimed_mean_increase)
 Central Limit theorem: 
 all samples.mean tends to normal distribution.
 
-H_0 Null hypothesis: no effekt
-alternative hypothesis H_1: effect > 0 (bspw)
+H_0 Null hypothesis: no effekt! Alternative Hypothesis H_1: effect > 0 (bspw)
 
 auch: H_0 = {<=, ==, >=} und H_1 the opposite
 a) significance level 𝛼: how likely is our test findings to yield a wrong conclusion.
@@ -32,9 +31,7 @@ eather reject H_0 "p value < 𝛼" OR _fail_ to reject H_0 when "p value > 𝛼"
 # ttest_1samp(sample, k, alternative = “greater”) whe H_1 claims >; default is two-sided (!=)
 Bsp. #HO: u<=80  # H1: u>80
 result=st.ttest_1samp (c3_sample, 80, alternative="greater")
-result.pvalue<0.05
-
-np.False_ # failed to reject H_0
+result.pvalue<0.05;   np.False_ # failed to reject H_0
 
 I) dependent samples -> use paired sample test
 ttest_rel(sample1, sample2, alternative = “two-sided”)
