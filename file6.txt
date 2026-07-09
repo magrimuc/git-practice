@@ -10,9 +10,18 @@ py libs: scikit, TensorFlow, PyTorch
 Regression
 fitting functions: linear regression
 https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html
-residuals: error (= pred. - fact)
+residuals/res.: error (= pred. - fact)
 interpolation (adjust to given points ) extrapolation (no given points anymore)
-
-
+different models...
+y - target; X - features(pred. var.); e Error; Intercept (const.) # auch vieldimensional (Vektor): multiple regression
+polynomial reg.: features come with **2 # math.exp(up to m)
+OLS ordinary least squares; minimize (res)**2
+sklearn.model_selection.train_test_split(X,y,test_size=.2,random_state=42) # splitting (not training)
+sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ = a
 
 Classification
+
+
+
+
+#slope is Neigung
