@@ -3,5 +3,16 @@ Named Entity Recognition
 Speech 2 Text
 Sentiment Analysis (Client feedback)
 OCR
-descision: hard coded (limited: build a Spam Email Filter)
-ML: 2 kinds (un)supervised 
+descision: hard coded (limited: build a Spam Email Filter e.g.)
+ML: 2 kinds (un)supervised (clustering +) categorizing/classification and regression [for numerics/continous]
+reinforcement is different (3rd)...
+py libs: scikit, TensorFlow, PyTorch
+Regression
+fitting functions: linear regression
+https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html
+residuals: error (= pred. - fact)
+interpolation (adjust to given points ) extrapolation (no given points anymore)
+
+
+
+Classification
