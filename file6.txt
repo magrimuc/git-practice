@@ -19,6 +19,10 @@ OLS ordinary least squares; minimize (res)**2
 sklearn.model_selection.train_test_split(X,y,test_size=.2,random_state=42) # splitting (not training)
 sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ = a
 
+statsmodels.formula.api as smf
+smf.ols("[one col ~ against some]", df).summery() # Regressionsmodel Ordinary Least Squares auch als Weighted oder Generalized LS verfügbar
+# summery() contains R**2 und coef/ std err zu some col
+
 Classification
 
 
