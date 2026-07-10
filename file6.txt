@@ -3,6 +3,7 @@ descision: hard coded (limited: build a Spam Email Filter e.g.)
 ML: 2 kinds (un)supervised (clustering +) categorizing/classification and regression [for numerics/continous]
 reinforcement is different (3rd)...
 py libs: scikit, TensorFlow, PyTorch
+ sklearn.model_selection.train_test_split(X,y,test_size=.2,random_state=42) # splitting (not training) (!)
 Regression
 fitting functions: linear regression
 https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html
@@ -12,7 +13,6 @@ different models...
 y - target; X - features(pred. var.); e Error; Intercept (const.) # auch vieldimensional (Vektor): multiple regression
 polynomial reg.: features come with **2 # math.exp(up to m)
 OLS ordinary least squares; minimize (res)**2
-sklearn.model_selection.train_test_split(X,y,test_size=.2,random_state=42) # splitting (not training)
 sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ = a
  validation: _R**2_ = 1- sum(res.**2)/sum(deviation from mean**2) # if R**2 = 0 --> model predicts mean
 MSE - mean sqrd err
