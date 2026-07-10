@@ -1,8 +1,4 @@
-AI early usecase:
-Named Entity Recognition
-Speech 2 Text
-Sentiment Analysis (Client feedback)
-OCR
+AI early usecases: Named Entity Recognition,Speech 2 Text,Sentiment Analysis (Client feedback),OCR
 descision: hard coded (limited: build a Spam Email Filter e.g.)
 ML: 2 kinds (un)supervised (clustering +) categorizing/classification and regression [for numerics/continous]
 reinforcement is different (3rd)...
@@ -18,6 +14,11 @@ polynomial reg.: features come with **2 # math.exp(up to m)
 OLS ordinary least squares; minimize (res)**2
 sklearn.model_selection.train_test_split(X,y,test_size=.2,random_state=42) # splitting (not training)
 sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ = a
+ validation: R**2 = 1- sum(res.**2)/sum(deviation from mean**2) # if R**2 = 0 --> model predicts mean
+lm.score(X_test,y_test) # replace test train
+(lm.predict(X_test) - y_train)**2 #: sqrd error
+MSE - mean sqrd err
+sklearn.metrics.mean_squared_error( # and ...r2_score( do this
 
 Classification
 
