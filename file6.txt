@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 AI early usecases: Named Entity Recognition,Speech 2 Text,Sentiment Analysis (Client feedback),OCR
->>>>>>> 53d3640db0f5f6742a1ba194ef24cef92425d7f0
 descision: hard coded (limited: build a Spam Email Filter e.g.)
 ML: 2 kinds (un)supervised (clustering +) categorizing/classification and regression [for numerics/continous]
 reinforcement is different (3rd)...
