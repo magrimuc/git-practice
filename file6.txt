@@ -15,7 +15,7 @@ polynomial reg.: features come with **2 # math.exp(up to m)
 OLS ordinary least squares; minimize (res)**2
 sklearn.linear_model.LinearRegression().fit(X,y) # lm.intercept_ = b; lm.coef_ = a
  validation: _R**2_ = 1- sum(res.**2)/sum(deviation from mean**2) # if R**2 = 0 --> model predicts mean
-MSE - mean sqrd err
+MSE - mean sqrd err # Einheiten... 
 sklearn.metrics.mean_squared_error( # and ...r2_score( do this
 (lm.score(X_test,y_test) # replace test train)
 (lm.predict(X_test) - y_train)**2 #: sqrd error
