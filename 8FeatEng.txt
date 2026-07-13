@@ -2,8 +2,16 @@
 pd.merge(left = salary,right = pd.get_dummies(salary['Daltonic'],prefix='Daltonic',drop_first=True),
                               left_index=True,
                               right_index=True)
+#für unique Daltonic Werte: neue Spalte mit 1 wenn jetzt Wert drin steht: 1 cat. col -> nunique bool columns
 binning: discretization use (q)cut (s.o.)
 salary_transformed['Height_classes'], bins = pd.cut(salary['Height'],5,labels=['very short','short','average','tall','very tall'], retbins=True)
 wished: independent col to predict dependent col. Test for dependencies: Chi-Squared (goodness of fit tests of contingency) + 2-sample t-tests 
 feature scaling: normalization + standardization (z-score)
+feature selection: if same info: drop col
+## optimal value... get x_i where e.g. loss is optmal
+energy_transformed = energy.copy()
+energy_transformed['Voltage'] = np.square(energy_transformed['Voltage']-100)
+energy_transformed['Rotation'] = np.square(energy_transformed['Rotation']-150)
+energy_transformed['Stability'] = np.square(energy_transformed['Stability']-90)
+100, 150, 90 are x_i in cols V, R, S
 
