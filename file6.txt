@@ -27,6 +27,7 @@ smf.ols("[one col ~ against some]", df).summary() # Regressionsmodel Ordinary Le
 # .fit() trains
 
 Classification
+sklearn.neighbors.KNeighborsClassifier
 
 
 
