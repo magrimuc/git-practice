@@ -19,15 +19,25 @@ MSE - mean sqrd err
 sklearn.metrics.mean_squared_error( # and ...r2_score( do this
 (lm.score(X_test,y_test) # replace test train)
 (lm.predict(X_test) - y_train)**2 #: sqrd error
-
+z-Score: z = x-min(x) / max(x) - min(x) # scaling 
 
 statsmodels.formula.api as smf
 smf.ols("[one col ~ against some]", df).summary() # Regressionsmodel Ordinary Least Squares auch als Weighted oder Generalized LS verfügbar
 # .summary() contains R**2 und coef/ std err zu some col
 # .fit() trains
 
+Data leakage - "zu leichte Daten beim Trainieren" (und testen - nicht neue - aber nicht in Produktion); strd abw, mean usw von richtigen Set
+
 Classification
-sklearn.neighbors.KNeighborsClassifier
+sklearn.preprocessor.StandardScaler
+sklearn.neighbors.KNeighborsClassifier # scilearn
+data = load_breast_cancer()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
 
 
 
