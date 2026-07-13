@@ -7,3 +7,6 @@ _precision = Tr+ / Tr+ + Fl+;
 _recall = Tr+ / Tr+ + Fl-
 _F1 = 2 x prec.*recall / sum(prec.,recall)  #... näher an 1 besser
 support: # items in class; recall: "sensitivität"
+#bsp
+sklearn.linear_model.LogisticRegression.fit(X_train_scaled, y_train)
+      classification_report(y_test,(-"-.predict(X_test_scaled)) # -> _s
