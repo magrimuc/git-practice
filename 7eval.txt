@@ -12,4 +12,4 @@ sklearn.linear_model.LogisticRegression.fit(X_train_scaled, y_train)
       classification_report(y_test,(-"-.predict(X_test_scaled)) # -> _s
 
 # USE "DSML\week5\D1\W5Day1\3. Classification.ipynb" BONUS! # Classifiers SVM collection
-sklearn.metrics.confusion_matrix(y_train_c, y_train_pred_c) # und train=test
+sklearn.metrics.confusion_matrix(y_train_c, y_train_pred_c) # und train=test; zeigt Tr+ und alles pred in x acutal in y achsis
