@@ -19,7 +19,8 @@ MSE - mean sqrd err
 sklearn.metrics.mean_squared_error( # and ...r2_score( do this
 (lm.score(X_test,y_test) # replace test train)
 (lm.predict(X_test) - y_train)**2 #: sqrd error
-z-Score: z = x-min(x) / max(x) - min(x) # scaling 
+z-Score: z = x-mü / sigma # scaling, standardization
+norm: z = x - min(x) / max(x) - min(x)
 
 statsmodels.formula.api as smf
 smf.ols("[one col ~ against some]", df).summary() # Regressionsmodel Ordinary Least Squares auch als Weighted oder Generalized LS verfügbar
