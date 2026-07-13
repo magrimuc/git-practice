@@ -1,0 +1,2 @@
+1 hot enc: replace a cat var with 1 of more new feat that have the vals of 0 or 1. # erg. 000100
+binning: discretization
