@@ -1,8 +1,14 @@
 Evaluation Matrices (of predictions):
-Accuracy: right pred. / all pred.
-#deceptive - trügerisch wenn Imbalanced DS, dann:
+_Accuracy: right pred. / all pred.
+#_A is deceptive if - trügerisch wenn Imbalanced DS, dann:
 confusion mtrx (4cells): (actual) True/False "+" (pred.) pos+/neg-); Acc = (Tr+ + Tr-)/all pred.
  Typ 1: Fl+ (prec. != 1); Typ 2: Fl- (recall != 1)
-precision = Tr+ / Tr+ + Fl+; recall = Tr+ / Tr+ + Fl-
-F1 = 2 x prec.*recall / sum(prec.,recall)  #... näher an 1 besser
-support: # items in class; recall: "sensitivität"
+_precision = Tr+ / Tr+ + Fl+; 
+_recall = Tr+ / Tr+ + Fl-
+_F1 = 2 x prec.*recall / sum(prec.,recall)  #... näher an 1 besser
+support: # items in class; recall: "sensitivität"; auch neg. pred. val = Tr- / (Tr- + Fl-) quasi _precision andersrum
+#bsp
+sklearn.linear_model.LogisticRegression.fit(X_train_scaled, y_train)
+      classification_report(y_test,(-"-.predict(X_test_scaled)) # -> _s
+
+# USE "DSML\week5\D1\W5Day1\3. Classification.ipynb" BONUS! # Classifiers SVM collection
