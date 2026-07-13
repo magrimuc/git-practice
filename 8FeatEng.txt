@@ -1,2 +1,9 @@
 1 hot enc: replace a cat var with 1 of more new feat that have the vals of 0 or 1. # erg. 000100
-binning: discretization
+pd.merge(left = salary,right = pd.get_dummies(salary['Daltonic'],prefix='Daltonic',drop_first=True),
+                              left_index=True,
+                              right_index=True)
+binning: discretization use (q)cut (s.o.)
+salary_transformed['Height_classes'], bins = pd.cut(salary['Height'],5,labels=['very short','short','average','tall','very tall'], retbins=True)
+wished: independent col to predict dependent col. Test for dependencies: Chi-Squared (goodness of fit tests of contingency) + 2-sample t-tests 
+feature scaling: normalization + standardization (z-score)
+
