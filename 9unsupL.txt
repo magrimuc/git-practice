@@ -20,4 +20,13 @@ Evaluation: cl should be tightly packed together
 cl should be far away from each other
 SILHOUETTE score: s = b-a / max(a,b); a: mean dist btw. 1 point of cl to each other cl membering Ps; (dense)
 b: mean dist between sample p and all other points on nearest cluster (separated)
-1 is good (dense separated) 0 bad; 0.7 - 0.3 reasonable; weak else
+1 is good (dense, separated) 0 bad; 0.7 - 0.3 reasonable; weak else
+
+STACKING - stack weak clustering algorithms -> supervised
+problems: when models have things in common; might enhance same error -> diverse classifiers
+bagging: sample randomly taken with replacement (aka bootstrap)
+pasting: sample randomly taken without replacement ---> differ in traing data; descision tree; random forest (can use)
+random patches: choose features randomly (besser wenn #feature > 10: image processing e.g.)(good for classification and regression - sklearn.ensemble.RandomForest...)
+ModelHYPERParameters - not internal params, not found by model during; not coeff & intercept; given by Analyst!; k in KNN, eps & min_samples in DBScan 
+Model parameters: There are internal to the model. They will be find by the model during the training. examples:intercept and coefficients for linear regression. They define the trained model. y= 5*X1+4.2*X2+...+9
+Model hyperparameters: The ML engineer should choose their values before starting the training. examples: K in KNN, eps, min samples
