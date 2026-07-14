@@ -1,3 +1,23 @@
 clustering - not classification (known classes w labels)
 k-means cl. w given k find k clusters; (re-)assing points to recomputed centers: AVG dist. minimized till no reassignments of points to clustercenters
 Voronoi regions assign to cls; limit: complex shapes, k?, init, outliers, no categorical d
+
+AGGLOMERATIVE
+ward
+The default choice, ward minimizes variance within merged clusters
+average
+average linkage merges the two clusters that have the smallest average distance between all their points.
+complete
+complete linkage (also known as maximum linkage) merges the two clusters that
+have the smallest maximum distance between their points.
+
+DBScan - Density Based Spatial Clustering of Applications with Noise
+can identify clusters of complex shapes and points that are not part of any cluster
+input: eps - density threshold 4 Ps within cl
+ and minPoints - #Ps within 1 cl
+
+Evaluation: cl should be tightly packed together
+cl should be far away from each other
+SILHOUETTE score: s = b-a / max(a,b); a: mean dist btw. 1 point of cl to each other cl membering Ps; (dense)
+b: mean dist between sample p and all other points on nearest cluster (separated)
+1 is good (dense separated) 0 bad; 0.7 - 0.3 reasonable; weak else
