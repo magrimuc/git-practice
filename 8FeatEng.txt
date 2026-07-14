@@ -15,3 +15,6 @@ energy_transformed['Rotation'] = np.square(energy_transformed['Rotation']-150)
 energy_transformed['Stability'] = np.square(energy_transformed['Stability']-90)
 100, 150, 90 are x_i in cols V, R, S
 
+big coef can mean: not normalized/standartizised col.
+overfitting: Model remembers train data too exactly - test performance descreases
+
