@@ -15,6 +15,8 @@ energy_transformed['Rotation'] = np.square(energy_transformed['Rotation']-150)
 energy_transformed['Stability'] = np.square(energy_transformed['Stability']-90)
 100, 150, 90 are x_i in cols V, R, S
 
-big coef can mean: not normalized/standartizised col.
+big coef can mean: not normalized/standartizised col. -> model more complex than hoped
 overfitting: Model remembers train data too exactly - test performance descreases
+L2 - ridge regression minimizes high coefs; punish high coeffs
+L1 - lasso regression similar SSE l_1 normed (el One) - does feature selection(!); elastic net does both balanced # c regularized regression nb
 
