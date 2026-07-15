@@ -1,0 +1,21 @@
+RandomForestRegressor
+ # Define parameter distribution for sampling
+param_dist = {
+    'n_estimators': [80,90,100, 200, 300, 500],   # number of trees
+    'max_depth': [None, 10, 20, 30],        # tree depth
+    'min_samples_split': [2, 5, 10],        # min samples to split
+    'min_samples_leaf': [1, 2, 4],          # min samples per leaf
+    'max_features': ['sqrt', 'log2', None]  # number of features per split
+}
+
+# Randomized search
+random_search = RandomizedSearchCV(
+    estimator=rf,
+    param_distributions=param_dist,
+    n_iter=200,                 # number of random combinations to try HORST spart Zeit
+    cv=3,                      # 3-fold cross-validation (faster than 5)
+    scoring='neg_mean_squared_error',
+    n_jobs=-1,                 # use all CPU cores
+    verbose=2,
+    random_state=42
+)
