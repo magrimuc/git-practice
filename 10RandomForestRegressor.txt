@@ -21,4 +21,6 @@ random_search = RandomizedSearchCV(
 ) #... fit
 print("Best parameters:", random_search.best_params_)
 best_rf = random_search.best_estimator_
-#bagging and boosting is considering overfitting.. (as it is done here)
+#bagging (and boosting) is considering overfitting.. (as it is done here)
+#also: Reducing the number of boosting iterations, using regularization, or adjusting learning rate
+
