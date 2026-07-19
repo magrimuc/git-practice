@@ -1,0 +1,26 @@
+﻿11MapFilterReduce.txt (like lab-map-filter-reduce-en 1)
+* lambda: anonyme funktionen, one-linerf = lambda x: x**2
+* map: funktion auf jedes element eines iterables anwenden 
+nums = [2-4]list(map(lambda x: x*2, nums)) # -> 1, 3, 5
+* filter: bedingung prüfen, nur True elemente behalten 
+list(filter(lambda x: x%2 == 0, nums)) # -> 3
+* reduce: kumulative operation (l2r); from functools import reduce
+reduce(lambda x, y: x+y, [2-5]) # -> 10 (1+2+3+4)
+* bonus - list comprehension: oft pythonischere alternative
+[x*2 for x in nums if x%2 == 0] # map & filter kombiniert
+
+
+missing_age_by_class = pd.pivot_table(
+    data=titanic,
+    values='age',
+    index='pclass',
+    aggfunc=lambda x: x.isnull().mean()
+);print("Proportion of missing age values by passenger class: \n");print(missing_age_by_class)
+fillna(method='ffill') # fill na forward (copy previous non null value to cell
+
+
+#3rd apply(),map(),applymap()
+df['sqrd'] = df['nos'].apply(lambda x: x ** 2)
+df['g_mapped'] = df['g'].map({'M': 'Male', 'F': 'Female'})
+df = df.applymap(lambda x: x.upper())
+t_clean['age'] = t_clean.groupby(['pclass', 'sex'])['age'].transform(lambda x: x.fillna(x.mean())) # fill na: avg of pclass,sex
