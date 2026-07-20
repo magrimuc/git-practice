@@ -1,25 +1,14 @@
 #1st df inspection
-df.select_dtypes(include=['number']) # get continous/cat columns use ex statt in, too (df inspec)
-.describe(); .nunique()
 fd.info()        #missing values!
+df.select_dtypes(include=['number']) # get continous/cat columns use ex statt in, too (df inspec)
+.describe(); .nunique();  .dropduplicates(?); .dropna() #drop rows w Null vs; .dropna(axis=1) #drop cols w Null vs
+fillna(method='ffill') # fill na foward (copy previous non null value to cell
 
-#2nd Null values, duplicates, formatting
+#2nd Null values, formatting
 sns.heatmap(titanic.isnull(), cbar=False, cmap='viridis', yticklabels=False)  #or
-missing_age_by_class = pd.pivot_table(
-    data=titanic,
-    values='age',
-    index='pclass',
+missing_age_by_class = pd.pivot_table(data=titanic,values='age',index='pclass',
     aggfunc=lambda x: x.isnull().mean()
 );print("Proportion of missing age values by passenger class: \n");print(missing_age_by_class)
-fillna(method='ffill') # fill na foward (copy previous non null value to cell
-dropna() # remove rows with null values from a DataFrame.
-dropna(axis=1) # remove columns with null values.
-
-#3rd apply(),map(),applymap()
-df['sqrd'] = df['nos'].apply(lambda x: x ** 2)
-df['g_mapped'] = df['g'].map({'M': 'Male', 'F': 'Female'})
-df = df.applymap(lambda x: x.upper())
-t_clean['age'] = t_clean.groupby(['pclass', 'sex'])['age'].transform(lambda x: x.fillna(x.mean())) # fill na: avg of pclass,sex 
 
 ### Plot Sammlung
 #cat colmns: 

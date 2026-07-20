@@ -29,8 +29,8 @@ Skew:
 
 Outlier formular:
 IQR = df.col.quantile(0.75) - df.col.quantile(0.25)
-lower_bound = df.col.quantile(0.25) - 1.5 IQR
-upper_bound = df.col.quantile(0.75) + 1.5 IQR
+lower_bound = df.col.quantile(0.25) - 1.5 *IQR
+upper_bound = df.col.quantile(0.75) + 1.5 *IQR
 outliers = df[(df.col < lower_bound) | (df.col > upper_bound)]
 clean_df = df[(df.col >= lower_bound) & (df.col <= upper_bound)]
 #trimming <1% eher ok
