@@ -1,8 +1,0 @@
-logistic regression (classification alg) - predicts prob. 4 One class
-https://de.wikipedia.org/wiki/Logistische_Regression
-Sigmoid funct (nicht die einzige wi + w_b) #w_b eigener _Bias ... für binär Entschiedungen outputl
-SOLL: nicht linear f(x) + f(z) != f(x+z)
-ReLU - RectifiedLinearUnit = max(0,x) # auch n lin; hiddenlayer fav.
-softmax - multiclass class input vec_i... output vec_j; immer e^(z_i) / sum e^(z_j); ## j<= #cl; when >2 cl
-from keras.optimizers import Adam
-model = Sequential() #.add ; .compile ; .fit(xy_train, validation_data=(x_test, y_test); Dropout - Pause gut
