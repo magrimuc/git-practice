@@ -5,7 +5,7 @@ SOLL: nicht linear f(x) + f(z) != f(x+z)
 ReLU - RectifiedLinearUnit = max(0,x) # auch n lin; hiddenlayer fav.
 softmax - multiclass class input vec_i... output vec_j; immer e^(z_i) / sum e^(z_j); ## j<= #cl; when >2 cl
 from keras.optimizers import Adam
-model = Sequential( ) #.add ; .compile ; .fit(xy_train, validation_data=(x_test, y_test); # Dropout - Pause gut
+model = Sequential( ) #.add ; .compile ; .fit(xy_train, validation_data=(x_test, y_test); # Dropout - Pause gut; val. split might B adjusted in .compile
 hierarch feat: low-lev edges2high-lev shapes
 conv layers: small (2-5x2-5) learnable filters/kernels /{dot product} input image; "output": feature map
  Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
@@ -16,3 +16,14 @@ flattening: 1 dim;
 fully connected or dense layer (sigmoid binary, softmax > 2 cl)
  Dense(128, activation='relu'),
  Dense(10, activation='softmax') # dim == y_labels
+
+OVERFITTING
+tensorflow.keras.callback Earlystopping #may prevent overfit; param in .fit(XYtrain,val,callbacks=[early_stopping])
+Dropout rate: randomly disabling neurons against overfit
+ other hyperparameters:
+#epochs
+Learning rate: Controls how much the model updates weights during training.
+Batch size: Number of samples processed before the model is updated.
+Optimizer: The algorithm used for weight updates (e.g., Adam, SGD).
+#filters and kernel size in convolutional layers.
+Fine-tuning good for model performance and training stability.
