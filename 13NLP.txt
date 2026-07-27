@@ -1,0 +1,31 @@
+Bigrams und Trigrams (Zwei und 3 Wortpaare(auch un1))
+pattern = re.compile('[%s]' % re.escape(string.punctuation)) # regular expr # 4loops missin
+new_token = pattern.sub(u'', token) # Replace punctuation with an empty string
+further regEx https://www.w3schools.com/python/python_regex.asp
+stemming - endung weghauen (kann Bedeutung verändern: caring -> car)
+lemmatization - grundform suchen (Bedeutung erhalten: was -> to be)
+PoS Tag - Part-of-Speech s.u. (classifier for words)
+stoppwords - allerweltswörter ohne (starke) Bedeutung (https://de.wikipedia.org/wiki/Stoppwort)
+bag o words - value_counts; sklearn.feature_extraction.text.CountVectorizer(ngram_range, stop_words (own?)
+max_df - ignorier wenn zu oft (min vice versa), max_feat (vec len)
+).fit_transform(str) # hot encoding like wordlist
+Term Frequency Inverse Document Frequency (TFxIDF) 2 metrics: how often in 1 and how unique words are in all docs?
+IDF = log(#docs/freq.word)+1; TF = freq.word
+
+PoS Tag: DT Delimiter
+| NN	  | Noun, singular
+| IN      | Preposition                                |
+| DT      | Determiner (demonstrative)                 |
+| NNS     | Noun, plural                               |
+| VBZ     | Verb, 3rd person singular present          |
+| TO      | "to" as infinitive marker                  |
+| VB      | Verb, base form                            |
+| WRB     | Wh-adverb (question word/adverb)           |
+| JJ      | Adjective                                  |
+| NN      | Noun, singular                             |
+| NN      | Noun (gerund form)                         |
+| VBZ     | Verb, 3rd person singular present          |
+| IN      | Preposition                                |
+| RB      | Adverb (intensifier)                       |
+| JJ      | Adjective                                  |
+| NNS     | Noun, plural (can be also treated as mass NN) 
