@@ -9,6 +9,7 @@ p = 0.6
 x = np.arange(1, 5) # let there be 4 or less 0.6fruits in all; sum prop
 cdf = stats.binom.cdf(x, all, p)
 Bayes Theorem (cond.prop2marginal.prop): P(A|B) -is: P(A when B is given)- = P(A /cap B) / P(B) = (P(B|A)*P((A))/P(B) # P(B|A) wird ausgerechnet (neu angeschaut), dann Formel
+           ##https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/
 
 Poisson:
 prob = (math.exp(-2.3) * (2.3 ** 5)) / math.factorial(5) # prop of scoring 5 goals in a match if 2.3 is AVG
