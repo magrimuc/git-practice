@@ -12,20 +12,16 @@ max_df - ignorier wenn zu oft (min vice versa), max_feat (vec len)
 Term Frequency Inverse Document Frequency (TFxIDF) 2 metrics: how often in 1 and how unique words are in all docs?
 IDF = log(#docs/freq.word)+1; TF = freq.word
 
-PoS Tag: DT Delimiter
-| NN	  | Noun, singular
+PoS Tag:
 | IN      | Preposition                                |
 | DT      | Determiner (demonstrative)                 |
-| NNS     | Noun, plural                               |
-| VBZ     | Verb, 3rd person singular present          |
+| NN(S)   | Noun, singular - gerund form (plural)
 | TO      | "to" as infinitive marker                  |
-| VB      | Verb, base form                            |
+| VB(Z)   | Verb, base form (3rd pers)
 | WRB     | Wh-adverb (question word/adverb)           |
-| JJ      | Adjective                                  |
-| NN      | Noun, singular                             |
-| NN      | Noun (gerund form)                         |
-| VBZ     | Verb, 3rd person singular present          |
-| IN      | Preposition                                |
 | RB      | Adverb (intensifier)                       |
 | JJ      | Adjective                                  |
-| NNS     | Noun, plural (can be also treated as mass NN) 
+
+Embeddings (n-dim vectors) - cos-Ähnlichkeit = sum_n(a_n*b_n) /sqrt(sum_n(a_n**2) * sum_n(b_n**2))
+Word2Vec, GloVe, FastText, ELMo, BERT, GPT -  Skip-gram, Cont. BoW Models .most_similar
+SentenceTransformers cosine_similarity(m.encode(str), m.encode(str0))
