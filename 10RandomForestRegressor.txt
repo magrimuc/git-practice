@@ -10,3 +10,8 @@ best_rf = random_search.best_estimator_
 #also: Reducing the number of boosting iterations, using regularization, or adjusting learning rate
 #HistGradientBoostingRegressor and XGBRegressor proven to be very good models
 
+sklearn.pipeline.pipeline = make_pipeline(TfidfVectorizer(),LogisticRegression()) #vec later
+cross_val_score(pipeline, X_train, y_train) #returns score -> ndarray[_AnyShape, dtype[Any]]
+y_testp = pipeline.predict(X_test)
+
+
