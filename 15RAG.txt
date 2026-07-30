@@ -1,0 +1,17 @@
+chromaDB with OpenAI.
+loadsplit: PyPDFLoader; RecursiveCharacterTextSplitter
+chunks = text_splitter.split_documents(pages)
+embeddings = OpenAIEmbeddings(model="text-embedding-3-large", openai_api_key=api_key)
+db = Chroma.from_documents(chunks, embeddings, persist_directory="./db") #store doc embeddings in db
+db.similarity_search("How is Horst?", n) # n docs dazu
+#create content: 4all docs: format prompt "Content" += doc.page_content; 
+#format prompt (16PromptTemplate) w formatted_context
+messages = [{'role': 'user', 'content': prompt}]
+completion = client.chat.completions.create(messages=messages, **model_params, timeout=120)
+answer = completion.choices[0].message.content
+print(answer)
+
+
+
+
+
