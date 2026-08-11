@@ -37,5 +37,9 @@ $ git rm --cached dataset/ratings.csv
 
 der nun folgende commit (mit .ignore) ist suffizient, einen vernünftigen status herbeizuführen - ohne rm cached reichte es in ersten Erfahrungen nicht...
 
+6) letzten commit rückgängig machen (hart: vergessen)
+$ git reset --hard HEAD~1
+$ git push --force-with-lease
+
 
 
