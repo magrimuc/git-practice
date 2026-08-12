@@ -41,5 +41,8 @@ der nun folgende commit (mit .ignore) ist suffizient, einen vernünftigen status
 $ git reset --hard HEAD~1
 $ git push --force-with-lease
 
+7) konfliktscheue mergekonfliktbehandlung
+$ git checkout --theirs -- data/data.csv
+
 
 
