@@ -1,17 +1,18 @@
-    Machine Learning Grundlagen (scikit-learn): In git-practice durch die Datei file1.txt ("scikit for sk (learn)") repräsentiert.
+    File 1: Machine Learning Grundlagen (scikit-learn): In git-practice durch die Datei file1.txt ("scikit for sk (learn)") repräsentiert.
         Passendes Lab: lab-intro-to-sklearn-en.
-    Überwachtes Lernen & Feature Engineering: Wird in git-practice durch 10RandomForestRegressor.txt (Random Forest, Overfitting) und 8FeatEng.txt (Feature Engineering, Regularization) behandelt.
+    8, 10: Überwachtes Lernen & Feature Engineering: Wird in git-practice durch 10RandomForestRegressor.txt (Random Forest, Overfitting) und 8FeatEng.txt (Feature Engineering, Regularization) behandelt.
         Passende Labs: lab-supervised-learning-en und lab-regression-analysis-en.
-    Modell-Evaluierung: In git-practice als 7eval.txt mit Fokus auf die Confusion Matrix erwähnt.
+    7: Modell-Evaluierung: In git-practice als 7eval.txt mit Fokus auf die Confusion Matrix erwähnt.
         Passendes Lab: lab-supervised-learning-model-eva....
-    Unüberwachtes Lernen: In git-practice als 9unsupL.txt enthalten.
+    9: Unüberwachtes Lernen: In git-practice als 9unsupL.txt enthalten.
         Passendes Lab: lab-unsupervised-learning-en.
-    Statistik & Hypothesentests: In git-practice listet file4.txt Hypothesen und den p-Wert auf.
+    4: Statistik & Hypothesentests: In git-practice listet file4.txt Hypothesen und den p-Wert auf.
         Passendes Lab: lab-hypothesis-testing-en.
-    Wahrscheinlichkeitsrechnung: In git-practice geht file5.txt auf das Bayes-Theorem ein.
+    5: Wahrscheinlichkeitsrechnung: In git-practice geht file5.txt auf das Bayes-Theorem ein.
         Passende Labs: lab-probability-intro-en, lab-discrete-probability-distribu... und lab-continuous-probability-distri...
-    Datenverarbeitung & Visualisierung (EDA): In git-practice durch file2.txt ("Enhance data processing and visualization") angeschnitten.
+    2: Datenverarbeitung & Visualisierung (EDA): In git-practice durch file2.txt ("Enhance data processing and visualization") angeschnitten.
         Passende Labs: lab-pandas-en, lab-pandas-merge-en, lab-eda-univariate und lab-eda-bivariate.
+        
     Git & Versionskontrolle: Das Repository git-practice selbst ist eine Übung für dieses Thema.
         Passendes Lab: lab-git-practice-data-ai.
 
