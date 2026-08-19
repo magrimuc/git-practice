@@ -11,7 +11,4 @@ completion = client.chat.completions.create(messages=messages, **model_params, t
 answer = completion.choices[0].message.content
 print(answer)
 
-
-
-
-
+Semantic Chunking, Hybrid Search, Query Expansion, Reranking und Knowledge Graph
