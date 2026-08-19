@@ -15,14 +15,12 @@
     Git & Versionskontrolle: Das Repository git-practice selbst ist eine Übung für dieses Thema.
         Passendes Lab: lab-git-practice-data-ai.
 
-Ergänzende, hochrelevante Themen (nicht in git-practice erwähnt):
-In Ihrer Übersicht der Repositories befinden sich weitere sehr wichtige Themengebiete für Data Science, die in den Textdateien von git-practice bisher keine Erwähnung finden:
-
-    Datenbanken & SQL: Dies ist fundamental für die Datenextraktion, wird aber im Git-Repo nicht aufgeführt.
-        Zugehörige Repositories: lab-sql-basics, lab-sql-select, lab-sql-join-multiple-tables-en und das dazugehörige Projekt prj-2-eda-sql-football-matches-st....
-    Python-Grundlagen & Datenstrukturen: Essenzielle Bausteine der Programmierung.
-        Zugehörige Repositories: lab-functions-en, lab-control-flow-en, lab-dict-sets-tuple-en, lab-list-comprehension-en, lab-python-list-dict-set-comprehe... sowie das mini-project-vikings-en.
-    Numerische Berechnungen & Vektorisierung:
-        Zugehöriges Repository: lab-numpy-en.
+out of scope:
     Funktionale Programmierung in Python:
         Zugehöriges Repository: lab-map-filter-reduce-en.
+    Numerische Berechnungen & Vektorisierung:
+        Zugehöriges Repository: lab-numpy-en.
+    Python-Grundlagen & Datenstrukturen: Essenzielle Bausteine der Programmierung.
+        Zugehörige Repositories: lab-functions-en, lab-control-flow-en, lab-dict-sets-tuple-en, lab-list-comprehension-en, lab-python-list-dict-set-comprehe... sowie das mini-project-vikings-en.
+    Datenbanken & SQL: Dies ist fundamental für die Datenextraktion, wird aber im Git-Repo nicht aufgeführt.
+        Zugehörige Repositories: lab-sql-basics, lab-sql-select, lab-sql-join-multiple-tables-en und das dazugehörige Projekt prj-2-eda-sql-football-matches-st...
