@@ -43,6 +43,7 @@ $ git push --force-with-lease
 
 7) konfliktscheue mergekonfliktbehandlung
 $ git checkout --theirs -- data/data.csv
+$ git commmit . -m "problem solved"   # auf das ganze repo, nicht nur auf Datei
 
 
 
